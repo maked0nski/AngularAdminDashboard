@@ -3,21 +3,21 @@ import {Banks} from './Banks';
 export class Client {
   id: number;
   name: string;
-  legalAdress: string;
-  actualAdress: string;
-  company: boolean;
-  telephone: number;
-  edrpou: number;
-  ipn: number;
-  iban: number;
-  bank: Banks;
-  director: string;
-  surveillance: boolean;
-  maintenance: boolean;
+  legalAdress?: string;
+  actualAdress?: string;
+  company?: boolean;
+  telephone?: number;
+  edrpou?: number;
+  ipn?: number;
+  iban?: number;
+  bank?: Banks;
+  director?: string;
+  surveillance?: boolean;
+  maintenance?: boolean;
 
 
   // tslint:disable-next-line:max-line-length
-  constructor(id: number, name: string, legalAdress: string, actualAdress: string, company: boolean, telephone: number, edrpou: number, ipn: number, iban: number, bank: Banks, director: string, surveillance: boolean, maintenance: boolean) {
+  constructor(id: number, name: string, legalAdress?: string, actualAdress?: string, company?: boolean, telephone?: number, edrpou?: number, ipn?: number, iban?: number, bank?: Banks, director?: string, surveillance?: boolean, maintenance?: boolean) {
     this.id = id;
     this.name = name;
     this.legalAdress = legalAdress;

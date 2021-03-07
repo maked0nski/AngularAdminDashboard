@@ -1,9 +1,18 @@
 export class Banks {
-  idMFO: number;
-  NameBank: string;
+  private _GLMFO: number;
+  private _SHORTNAME: string;
 
-  constructor(idMFO: number, NameBank: string) {
-    this.idMFO = idMFO;
-    this.NameBank = NameBank;
+
+  constructor(GLMFO: number, SHORTNAME: string) {
+    this._GLMFO = GLMFO;
+    this._SHORTNAME = SHORTNAME;
+  }
+
+  get GLMFO(): number {
+    return this._GLMFO;
+  }
+
+  get SHORTNAME(): string {
+    return this._SHORTNAME;
   }
 }
